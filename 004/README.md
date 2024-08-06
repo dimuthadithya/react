@@ -6,7 +6,7 @@ Props (short for properties) in React are used to pass data from a parent compon
 
 Array destructuring is a syntax feature in JavaScript that allows you to extract values from arrays and assign them to variables in a concise manner. For example, given an array of values, you can unpack them into individual variables. This is especially useful when working with functions that return arrays, such as React hooks like `useState`, where you can directly assign the returned state and updater function to variables.
 
-(https://github.com/dimuthx353/react/blob/master/004/src/assets/Screenshot%20(1).png)
+[](https://github.com/dimuthx353/react/blob/master/004/src/assets/Screenshot%20(1).png)
 
 ### Components in React
 
