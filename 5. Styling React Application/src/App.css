@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  padding: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.App h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.App ul {
+  padding: 40px;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.delete {
+  background-color: crimson;
+  padding: 6px 4px;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.delete:hover {
+  color: #000;
+  background-color: transparent;
+}
+
+.btn-show {
+  background-color: yellowgreen;
+  padding: 6px 4px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  letter-spacing: 1px;
+  border: none;
+  margin-top: 30px;
+}
+
+.completed {
+  background-color: rgb(50, 205, 99);
+}
+
+.incompleted {
+  background-color: aqua;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 5px solid #f0f0f0f0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header img {
+  width: 50px;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.box {
+  padding: 50px;
+  /* border: 2px solid #000; */
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  /* color: #fff; */
+}
+
+.box .title {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.success {
+  background-color: rgba(153, 205, 50, 0.427);
+}
+
+.alert {
+  background-color: rgba(220, 20, 60, 0.153);
+}
+
+.warning {
+  background-color: rgba(255, 0, 0, 0.197);
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.trigger {
+  padding: 10px;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: navy;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+footer {
+  min-height: 200px;
+  padding: 20px;
+  background-color: #fefefefe;
+  align-items: center;
+  display: flex;
+  text-transform: capitalize;
+  font-size: 10px;
+
+}
