@@ -1,0 +1,47 @@
+.taskCard {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.taskCard .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.taskCard button {
+  transition: opacity 0.1s ease-in-out;
+  opacity: 0.75;
+  border-radius: none !important;
+  padding: 5px 10px;
+}
+
+.taskCard button:hover {
+  opacity: 1;
+}
+
+.task {
+  margin-top: 30px;
+}
+
+.task button {
+  transition: color 0.3s ease-in-out;
+}
+
+.task button:hover {
+  background-color: crimson;
+}
+
+.taskCard .task ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin-bottom: 10px;
+}
