@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "id": 10001,
+            "name": "Basic to advanced to react",
+            "price": 29,
+            "in_stock": true
+        },
+        {
+            "id": 10002,
+            "name": "Basic to advanced to JS",
+            "price": 49,
+            "in_stock": true
+        },
+        {
+            "id": 10003,
+            "name": "Basic to advanced to Html",
+            "price": 49,
+            "in_stock": true
+        },
+        {
+            "id": 10004,
+            "name": "Basic to advanced to Css",
+            "price": 99,
+            "in_stock": false
+        }
+    ]
+}

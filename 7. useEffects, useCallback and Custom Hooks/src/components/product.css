@@ -1,0 +1,79 @@
+body {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  margin: 0 auto;
+  padding: 10px 40px;
+  margin-bottom: 20px;
+  position: relative;
+  max-width: 700px;
+  margin-bottom: 40px;
+  box-shadow: rgba(86, 82, 82, 0.16) 5px 1px 4px;
+}
+
+.card .id {
+  background-color: purple;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.card .name {
+  margin-top: 50px;
+  font-size: 22px;
+}
+
+.price {
+  font-size: 25px;
+}
+
+.card .info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card .in-stock {
+  background-color: green;
+  color: #fff;
+  padding: 7px;
+  border-radius: 6px;
+}
+
+.card .unavailable {
+  background-color: crimson;
+  color: #fff;
+  padding: 7px;
+  border-radius: 6px;
+}
+
+.btn-check {
+  display: block;
+  color: #fff;
+  padding: 7px;
+  border-radius: 6px;
+  background-color: navy;
+  cursor: pointer;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.btn-div button {
+  letter-spacing: 1px;
+}
