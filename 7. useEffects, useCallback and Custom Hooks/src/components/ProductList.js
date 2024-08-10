@@ -1,9 +1,14 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import './product.css';
+import { useFetch } from '../hooks/useFetch';
 
 export const ProductList = () => {
-  const [products, setProducts] = useState([]);
+  // const [products, setProducts] = useState([]);
   const [url, setUrl] = useState(`http://localhost:8000/products`);
+
+  const { data: products } = useFetch(url);
+  console.log(products);
+
   //   const [count, setCount] = useState();
 
   /*   useEffect(() => {
@@ -15,7 +20,7 @@ export const ProductList = () => {
       });
   }, [url]); */
 
-  const fetchProducts = useCallback(async () => {
+  /*  const fetchProducts = useCallback(async () => {
     const response = await fetch(url);
     const data = await response.json();
     setProducts(data);
@@ -24,7 +29,7 @@ export const ProductList = () => {
   useEffect(() => {
     fetchProducts();
   }, [fetchProducts]);
-
+ */
   return (
     <section>
       <div className="btn-div">
@@ -54,18 +59,19 @@ export const ProductList = () => {
           Out Of Stock
         </button>
       </div>
-      {products.map((product) => (
-        <div className="card" key={product.id}>
-          <p className="id">{product.id}</p>
-          <p className="name">{product.name}</p>
-          <p className="info">
-            <span className="price">${product.price}</span>
-            <span className={product.in_stock ? 'in-stock' : 'unavailable'}>
-              {product.in_stock ? 'stock' : 'unavailable'}
-            </span>
-          </p>
-        </div>
-      ))}
+      {products &&
+        products.map((product) => (
+          <div className="card" key={product.id}>
+            <p className="id">{product.id}</p>
+            <p className="name">{product.name}</p>
+            <p className="info">
+              <span className="price">${product.price}</span>
+              <span className={product.in_stock ? 'in-stock' : 'unavailable'}>
+                {product.in_stock ? 'stock' : 'unavailable'}
+              </span>
+            </p>
+          </div>
+        ))}
     </section>
   );
 };
