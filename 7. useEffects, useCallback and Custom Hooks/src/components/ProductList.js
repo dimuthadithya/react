@@ -61,7 +61,7 @@ export const ProductList = () => {
       </div>
 
       {loading && <img className="loading" src={loadingimg} alt="" />}
-      {<p>{error}</p>}
+      {error && <p>{error}</p>}
 
       {products &&
         products.map((product) => (
