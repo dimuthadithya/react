@@ -1,12 +1,13 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import './product.css';
 import { useFetch } from '../hooks/useFetch';
+import loadingimg from '../assets/loading.gif';
 
 export const ProductList = () => {
   // const [products, setProducts] = useState([]);
   const [url, setUrl] = useState(`http://localhost:8000/products`);
 
-  const { data: products } = useFetch(url);
+  const { data: products, loading } = useFetch(url);
   console.log(products);
 
   //   const [count, setCount] = useState();
@@ -59,6 +60,9 @@ export const ProductList = () => {
           Out Of Stock
         </button>
       </div>
+
+      {loading && <img className="loading" src={loadingimg} alt="" />}
+
       {products &&
         products.map((product) => (
           <div className="card" key={product.id}>
