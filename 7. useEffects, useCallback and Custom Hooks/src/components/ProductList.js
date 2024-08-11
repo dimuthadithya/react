@@ -7,8 +7,7 @@ export const ProductList = () => {
   // const [products, setProducts] = useState([]);
   const [url, setUrl] = useState(`http://localhost:8000/products`);
 
-  const { data: products, loading } = useFetch(url);
-  console.log(products);
+  const { data: products, loading, error } = useFetch(url);
 
   //   const [count, setCount] = useState();
 
@@ -62,6 +61,7 @@ export const ProductList = () => {
       </div>
 
       {loading && <img className="loading" src={loadingimg} alt="" />}
+      {<p>{error}</p>}
 
       {products &&
         products.map((product) => (
