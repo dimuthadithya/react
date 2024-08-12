@@ -1,0 +1,190 @@
+body {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo > span {
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3rem;
+}
+
+.logoImg {
+  width: 100px;
+}
+
+.themeSelector {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.themeSelector > span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 0px 2px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #f0f0f0f0;
+}
+
+.themeSelector .light {
+  background-color: #fff;
+}
+.themeSelector .medium {
+  background-color: #f0f0f0f0;
+}
+.themeSelector .dark {
+  background-color: #000;
+}
+.themeSelector .gOne {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+.themeSelector .gTwo {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+.themeSelector .gThree {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+
+.themeSelector > span.activeTheme {
+  /* zoom: 1.2; */
+  /* width: 40px; */
+  /* height: 40px; */
+  zoom: 1.6;
+  /* margin-bottom: 10px; */
+}
+
+.addTask {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  margin-top: 60px;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addTask input {
+  flex: 1;
+  max-width: 500px;
+  padding: 5px;
+  outline: 0;
+  border: 2px solid #b9b9b968;
+}
+
+.addTask button {
+  padding: 10px;
+  margin: 0px 20px;
+  background-color: rgb(14, 189, 8);
+  color: #fff;
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 70px;
+}
+
+.shwoTask {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 50px;
+  padding: 10px 10px;
+}
+
+.shwoTask .head {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.shwoTask .head .count {
+  background-color: azure;
+  border-radius: 50%;
+  margin: 0px 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.shwoTask .head .title {
+  font-weight: bold;
+}
+
+.shwoTask .head .clearAll {
+  background-color: #0093e9;
+
+  color: #fff;
+  border: transparent;
+  outline: none;
+  padding: 5px 20px;
+  border-radius: 5dvb;
+}
+
+.shwoTask ul li {
+  min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  border: 7px solid #f4f4f4fd;
+  border-left: 7px solid #3b71ca;
+  margin: 10px 10px;
+}
+
+.shwoTask ul li > p {
+  padding: 10px;
+  flex: 1;
+}
+
+.shwoTask ul li > p > span {
+  display: block;
+}
+
+.shwoTask ul li > .tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shwoTask ul li > .tools i {
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.shwoTask > i {
+  cursor: pointer;
+}
+
+ul {
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
