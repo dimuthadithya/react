@@ -17,9 +17,8 @@ export const AddTask = ({ taskList, setTaskList, task, setTask }) => {
           : todo
       );
 
-      e.target.task.value = '';
-
       setTaskList(updateTask);
+      setTask({});
     } else {
       const id = Math.floor(Math.random() * 100000);
       const task = {
@@ -27,7 +26,7 @@ export const AddTask = ({ taskList, setTaskList, task, setTask }) => {
         name: e.target.task.value,
         time: `${date.toLocaleTimeString()} ${date.toLocaleTimeString()}`
       };
-      e.target.task.value = '';
+      setTask({});
       setTaskList([...taskList, task]);
     }
   };
@@ -41,7 +40,7 @@ export const AddTask = ({ taskList, setTaskList, task, setTask }) => {
           autoCapitalize="off"
           placeholder=" task...."
           maxLength={25}
-          value={task.name}
+          value={task.name || ''}
           onChange={(e) => setTask({ ...task, name: e.target.value })}
         />
         <button type="submit">{task.id ? 'Update' : 'Add'} Task</button>
