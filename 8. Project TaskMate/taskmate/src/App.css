@@ -46,16 +46,17 @@ header .logo > span {
   border: 2px solid #f0f0f0f0;
 }
 
-.themeSelector .light {
+.light {
   background-color: #fff;
 }
-.themeSelector .medium {
+.medium {
   background-color: #f0f0f0f0;
 }
-.themeSelector .dark {
+.dark {
   background-color: #000;
 }
-.themeSelector .gOne {
+
+.gOne {
   background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
@@ -64,11 +65,11 @@ header .logo > span {
     #ffcc70 100%
   );
 }
-.themeSelector .gTwo {
+.gTwo {
   background-color: #0093e9;
   background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
-.themeSelector .gThree {
+.gThree {
   background-color: #fbab7e;
   background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
 }
