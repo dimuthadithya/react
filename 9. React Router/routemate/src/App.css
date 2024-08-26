@@ -1,0 +1,50 @@
+header img {
+  width: 40px;
+}
+
+header {
+  display: flex;
+  border: 2px solid #f0f0f0f0;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+}
+
+.logo-name > span {
+  margin: 0px 10px;
+}
+
+footer {
+  background-color: black;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.link {
+  padding: 5px;
+}
+
+nav a {
+  margin: 0px 10px;
+}
+
+main {
+  height: 100vh;
+}
+
+.active {
+  background-color: navy;
+  color: #fff;
+  padding: 5px;
+}

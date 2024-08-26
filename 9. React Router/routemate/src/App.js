@@ -10,23 +10,18 @@ import { ProductList } from './components/ProductList';
 
 function App() {
   return (
-    <div>
-      <header>
-        <Header></Header>
-      </header>
-      <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
-        <Route path="products" element={<ProductList></ProductList>}></Route>
-        <Route
-          path="products/10001"
-          element={<ProductDetails></ProductDetails>}
-        ></Route>
-        <Route path="Contact" element={<Contact></Contact>}></Route>
-        <Route path="Footer" element={<Footer></Footer>}></Route>
-      </Routes>
-      <footer>
-        <Footer></Footer>
-      </footer>
+    <div className="App">
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home></Home>} />
+          <Route path="products" element={<ProductList />} />
+          <Route path="products/10001" element={<ProductDetails />} />
+          <Route path="Contact" element={<Contact />} />
+          <Route path="Footer" element={<Footer />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
 }
