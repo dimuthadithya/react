@@ -21,7 +21,11 @@ header {
 }
 
 footer {
-  background-color: black;
+  padding: 20px;
+  color: #fff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
@@ -40,11 +44,30 @@ nav a {
 }
 
 main {
-  height: 100vh;
+  height: 80vh;
 }
 
 .active {
   background-color: navy;
   color: #fff;
   padding: 5px;
+}
+
+button {
+  padding: 5px;
+  background-color: navajowhite;
+  color: navy;
+  border-radius: 5px;
+  border: 2px solid #fb8686;
+  cursor: pointer;
+}
+
+.components {
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #000;
+  margin: 30px 0px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: -18px 10px 20px 0px #f5f5f5;
 }
