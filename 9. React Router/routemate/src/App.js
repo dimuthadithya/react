@@ -8,6 +8,7 @@ import { Home } from './components/Home';
 import { ProductDetails } from './components/ProductDetails';
 import { ProductList } from './components/ProductList';
 import { Admin } from './components/Admin';
+import { NotFound } from './components/NotFound';
 
 function App() {
   const user = true;
@@ -26,6 +27,7 @@ function App() {
             path="admin"
             element={user ? <Admin /> : <Navigate to="/" />}
           ></Route>
+          <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </main>
       <Footer />
