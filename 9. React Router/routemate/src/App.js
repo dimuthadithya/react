@@ -9,6 +9,10 @@ import { ProductDetails } from './components/ProductDetails';
 import { ProductList } from './components/ProductList';
 import { Admin } from './components/Admin';
 import { NotFound } from './components/NotFound';
+import { ContactEu } from './components/ContactEu';
+import { ContactIn } from './components/ContactIn';
+import { ContactUs } from './components/ContactUs';
+import { ContactOther } from './components/ContactOther';
 
 function App() {
   const user = true;
@@ -21,7 +25,12 @@ function App() {
           <Route path="/" element={<Home></Home>} />
           <Route path="products" element={<ProductList />} />
           <Route path="products/:id" element={<ProductDetails />} />
-          <Route path="Contact" element={<Contact />} />
+          <Route path="Contact" element={<Contact />}>
+            <Route path="eu" element={<ContactEu />}></Route>
+            <Route path="in" element={<ContactIn />}></Route>
+            <Route path="us" element={<ContactUs />}></Route>
+            <Route path="*" element={<ContactOther />}></Route>
+          </Route>
           <Route path="Footer" element={<Footer />} />
           <Route
             path="admin"
