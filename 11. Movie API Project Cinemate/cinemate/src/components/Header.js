@@ -38,7 +38,7 @@ export const Header = () => {
             CineMate
           </span>
         </Link>
-        <div className="flex md:order-2">
+        <div id="mobile-nav" className="flex md:order-2">
           <button
             onClick={() => {
               setHidden(!hidden);
@@ -67,7 +67,7 @@ export const Header = () => {
             <span className="sr-only">Search</span>
           </button>
           <div className="relative hidden md:block">
-            <div className="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3">
+            <div className="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3 ">
               <svg
                 className="w-4 h-4 text-gray-500 dark:text-gray-400"
                 aria-hidden="true"
@@ -98,7 +98,7 @@ export const Header = () => {
             }}
             data-collapse-toggle="navbar-search"
             type="button"
-            className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center justify-center w-10 h-10 p-2 mx-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-search"
             aria-expanded="false"
           >
