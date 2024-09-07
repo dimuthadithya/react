@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
-    <footer class="bg-white shadow dark:bg-gray-800">
-      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+    <footer className="bg-white shadow dark:bg-gray-800">
+      <div className="w-full max-w-screen-xl p-4 mx-auto md:flex md:items-center md:justify-between">
+        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2030
           <Link
             to="https://flowbite.com/"

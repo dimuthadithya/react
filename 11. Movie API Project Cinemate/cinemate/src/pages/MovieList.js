@@ -1,9 +1,14 @@
 import React from 'react';
+import { Card } from '../components';
 
 export const MovieList = () => {
   return (
     <main>
-      <div className="text-2xl">Movie List</div>
+      <section className="mx-auto max-w-7xl py-7">
+        <div className="flex flex-wrap justify-start ">
+          <Card />
+        </div>
+      </section>
     </main>
   );
 };
