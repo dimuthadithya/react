@@ -11,7 +11,7 @@ Popular
 https://api.themoviedb.org/3/movie/popular?api_key=25939239a6cdd327d9c31aef2af60d5c&language=en-US
 
 Top rated
-https://api.themoviedb.org/3/movie/movie?api_key=25939239a6cdd327d9c31aef2af60d5c&language=en-US
+https://api.themoviedb.org/3/movie/top_rated?api_key=25939239a6cdd327d9c31aef2af60d5c&language=en-US
 
 Upcoming
 https://api.themoviedb.org/3/movie/upcoming?api_key=25939239a6cdd327d9c31aef2af60d5c&language=en-US
